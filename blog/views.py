@@ -4,7 +4,7 @@ from django.shortcuts import render, redirect
 # Create your views here.
 
 def index(request):
-    return render(request, '')
+    return render(request, 'main.html')
 
 
 def news(request):
@@ -27,17 +27,3 @@ def visited(request):
     return render(request, '')
 
 
-def index(request):
-    return render(request, '')
-
-
-def index(request):
-    return render(request, '')
-
-
-def index(request):
-    return render(request, '')
-
-
-def index(request):
-    return render(request, '')
