@@ -1,0 +1,110 @@
+<div class="menu">
+    <style type="text/css">
+        ul li a {
+            display: flex
+
+        }
+        .href {
+            color: #636363;
+            font-size: 1.4rem;
+            text-decoration: none;
+
+        }
+
+        .href:hover {
+            text-decoration: none;
+            color: white;
+        }
+
+        .arrow {
+            margin-left: 1%;
+            -webkit-transition-duration: 0.8s;
+            -moz-transition-duration: 0.8s;
+            -o-transition-duration: 0.8s;
+            transition-duration: 0.8s;
+
+            -webkit-transition-property: -webkit-transform;
+            -moz-transition-property: -moz-transform;
+            -o-transition-property: -o-transform;
+            transition-property: transform;
+
+        }
+    </style>
+    <span class="close-menu icon-cross2 right-boxed"></span>
+    <ul class="menu-list right-boxed">
+        <li>
+            <a href="{% url 'index' %}">Главная</a>
+        </li>
+        <li>
+            <a href="#" data-value="div1">О себе
+                <div class="arrow">></div>
+            </a>
+        </li>
+        <div id="div1" class="mt-1 ml-3" style="display: none">
+            <a class="href" href="">Образование</a>
+            <hr color="white" style="margin: 0"/>
+            <a class="href" href="">Курсы повышения квалификации</a>
+        </div>
+        <li>
+            <a href="#" data-value="div2">Мое портфолио
+                <div class="arrow"> ></div>
+            </a>
+        </li>
+        <div id="div2" class="mt-1 ml-3" style="display: none">
+            <a class="href" href="">Мои достижения</a>
+            <hr color="white" style="margin: 0"/>
+            <a class="href" href="">Достижения моих учеников</a>
+        </div>
+        <li>
+            <a href="#" data-value="div3">Моим ученикам
+                <div class="arrow"> ></div>
+            </a>
+        </li>
+        <div id="div3" class="mt-1 ml-3" style="display: none">
+            <a class="href" href="">Тесты</a>
+            <hr color="white" style="margin: 0"/>
+            <a class="href" href="">КИМы</a>
+            <hr color="white" style="margin: 0"/>
+            <a class="href" href="">Конкурсные задания</a>
+            <hr color="white" style="margin: 0"/>
+            <a class="href" href="">Олимпиады</a>
+        </div>
+        <li>
+            <a href="#" data-value="div4">Моим коллегам
+                <div class="arrow"> ></div>
+            </a>
+        </li>
+        <div id="div4" class="mt-1 ml-3" style="display: none">
+            <a class="href" href="">Рабочие программы</a>
+            <hr color="white" style="margin: 0"/>
+            <a class="href" href="">Конспекты уроков</a>
+            <hr color="white" style="margin: 0"/>
+            <a class="href" href="">Работа с родителями</a>
+            <hr color="white" style="margin: 0"/>
+            <a class="href" href="">Презентации</a>
+        </div>
+        <li>
+            <a href="#" data-value="div5">Мы вместе
+                <div class="arrow"> ></div>
+            </a>
+        </li>
+        <div id="div5" class="mt-1 ml-3" style="display: none">
+            <a class="href" href="">Акции</a>
+            <hr color="white" style="margin: 0"/>
+            <a class="href" href="">Проекты</a>
+        </div>
+        <li>
+            <a href="#">Фотоальбом</a>
+        </li>
+    </ul>
+    <div class="menu-footer right-boxed">
+        <div class="social-list">
+            <a href="" class="icon ion-social-twitter"></a>
+            <a href="" class="icon ion-social-facebook"></a>
+            <a href="" class="icon ion-social-googleplus"></a>
+            <a href="" class="icon ion-social-linkedin"></a>
+            <a href="" class="icon ion-social-dribbble-outline"></a>
+        </div>
+        <div class="copy">© Ramsay 2019. All Rights Reseverd</div>
+    </div>
+</div>
