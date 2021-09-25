@@ -593,7 +593,7 @@ label.error{
 
 .brand{
   line-height: 1.6;
-  color: #fff;
+  color: #000000;
   display: inline-block;
 }
 
@@ -683,7 +683,7 @@ a.brand:focus{
   float: left;
   font-size: 1.428rem;
   line-height: 1;
-  color:#fff;
+  color: #ffffff;
   margin-left: 2rem;
 }
 
@@ -718,12 +718,12 @@ a.brand:focus{
 
 .contacts .contact-item{
   display: inline-block;
-  color: #fff;
+  color: #000000;
   margin-right:2rem;
 }
 
 .contacts .contact-item a{
-  color: #fff;
+  color: #000000;
 }
 
 
@@ -964,16 +964,27 @@ a.brand:focus{
 }
 
 .copy-bottom{
-  display: none;
+  display: block;
   position: absolute;
   z-index: 10;
   left:0;
-  bottom:2.4rem;
+  bottom:5rem;
   color: #000;
 }
 
+.copy-bottom.two{
+  left: 25rem;
+}
+.copy-bottom.down1 {
+  bottom:3rem;
+}
+.copy-bottom.down2 {
+  bottom:1rem;
+}
+
+
 .copy-bottom.white{
-  color: #fff;
+  color: #000000;
 }
 
 #pp-nav{
