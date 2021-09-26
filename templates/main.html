@@ -15,7 +15,7 @@
 <link rel="apple-touch-icon" sizes="72x72" href="{% static 'apple-touch-icon-72x72.png' %}">
 <link rel="apple-touch-icon" sizes="114x114" href="{% static 'apple-touch-icon-114x114.png' %}">
 
-{% block title %}<title>Сайт учителя истории</title> {% endblock %}
+<title>{% block title %}Сайт учителя истории{% endblock %}</title>
 
 <!-- Styles -->
 <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700&display=swap" rel="stylesheet">
@@ -38,33 +38,33 @@
 
     <!-- Navbar -->
 
-    <header class="navbar navbar-fullpage boxed">
-      <div class="navbar-bg"></div>
-      <a class="brand" href="#">
-        <img alt="" src="{% static 'images/brand.png' %}">
-        <div class="brand-info">
-          <div class="brand-name">Леонова</div>
-        </div>
-      </a>
-
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      
-      <div class="contacts d-none d-md-block">
-        <div class="contact-item">
-          +96 56-85-1379
-        </div>
-        <div class="contact-item spacer">
-          /
-        </div>
-        <div class="contact-item">
-          <a href="mailto:contact@Ramsay.com">contact@Ramsay.com</a>
-        </div>
-      </div>
-    </header>
+{#    <header class="navbar navbar-fullpage boxed">#}
+{#      <div class="navbar-bg"></div>#}
+{#      <a class="brand" href="{% url 'index' %}">#}
+{#        <img alt="" src="{% static 'images/brand.png' %}">#}
+{#        <div class="brand-info">#}
+{#          <div class="brand-name">Леонова</div>#}
+{#        </div>#}
+{#      </a>#}
+{##}
+{#      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">#}
+{#        <span class="icon-bar"></span>#}
+{#        <span class="icon-bar"></span>#}
+{#        <span class="icon-bar"></span>#}
+{#      </button>#}
+{#      #}
+{#      <div class="contacts d-none d-md-block">#}
+{#        <div class="contact-item">#}
+{#          +96 56-85-1379#}
+{#        </div>#}
+{#        <div class="contact-item spacer">#}
+{#          /#}
+{#        </div>#}
+{#        <div class="contact-item">#}
+{#          <a href="mailto:contact@Ramsay.com">contact@Ramsay.com</a>#}
+{#        </div>#}
+{#      </div>#}
+{#    </header>#}
     <div class="copy-bottom white boxed">Министерство просвещения РФ</div>
     <div class="copy-bottom white boxed down1">Министерство образования Пензенской обл.</div>
     <div class="copy-bottom white boxed down2">Управление образованием г.Кузнецк</div>
@@ -91,7 +91,7 @@
                     <div class="intro">
                       <div class="row">
                         <div class="col-md-8 col-lg-6">
-                          <h1 class="display-2 text-white  wow fadeIn" data-wow-delay="0.1s"><span class="text-primary">Приветствую,</span>слоган</h1>
+                          <h1 class="display-2 text-white  wow fadeIn" data-wow-delay="0.1s"><span class="text-primary">Здравствуйте,</span> дорогие друзья!</h1>
                         </div>
                       </div>
                     </div>
@@ -105,7 +105,7 @@
       <div data-anchor="page2" class="pp-scrollable section section-2">
         <div class="scroll-wrap">
           <div class="scrollable-content">
-            <div class="vertical-title text-white  d-none d-lg-block"><span>what I do</span></div>
+            <div class="vertical-title text-white  d-none d-lg-block"><span>О себе</span></div>
             <div class="vertical-centred">
               <div class="boxed boxed-inner">
                 <div class="boxed">
