@@ -84,13 +84,13 @@
     });
 
 
-    $('.col-resume').on('mouseover', function () {
-        $('.section-bg.mask').addClass('hide');
-    });
-
-    $('.col-resume').on('mouseleave', function () {
-        $('.section-bg.mask').removeClass('hide');
-    });
+    // $('.col-resume').on('mouseover', function () {
+    //     $('.section-bg.mask').addClass('hide');
+    // });
+    //
+    // $('.col-resume').on('mouseleave', function () {
+    //     $('.section-bg.mask').removeClass('hide');
+    // });
 
 
     /*-------------------------------------------------------------------------------
@@ -253,6 +253,20 @@
             id = $(this).data('value');
             $('#' + id).show(800);
         }
+    });
+
+    $('.section-3 .fadeY-1').on('mouseover', function () {
+       $('.section-3 .section-bg').css({'background-image':'url("photo/dip1.jpg")'});
+    });
+
+    $('.section-3 .fadeY-2').on('mouseover', function () {
+       $('.section-3 .section-bg').css({'background-image':'url("photo/dip2.jpg")'});
+    });
+    $('.section-3 .fadeY-2').on('mouseleave', function () {
+       $('.section-3 .section-bg').css({'background-color':'black'});
+    });
+    $('.section-3 .fadeY-1').on('mouseleave', function () {
+       $('.section-3 .section-bg').css({'background-color':'black'});
     });
 
 
