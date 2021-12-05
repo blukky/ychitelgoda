@@ -256,17 +256,22 @@
     });
 
     $('.section-3 .fadeY-1').on('mouseover', function () {
-       $('.section-3 .section-bg').css({'background-image':'url("photo/dip1.jpg")'});
+        $('.section-3 .section-bg.dip0').hide();
+        $('.section-3 .section-bg.dip1').fadeIn(800);
+
     });
 
     $('.section-3 .fadeY-2').on('mouseover', function () {
-       $('.section-3 .section-bg').css({'background-image':'url("photo/dip2.jpg")'});
+        $('.section-3 .section-bg.dip0').hide();
+        $('.section-3 .section-bg.dip2').fadeIn(800);
     });
     $('.section-3 .fadeY-2').on('mouseleave', function () {
-       $('.section-3 .section-bg').css({'background-color':'black'});
+        $('.section-3 .section-bg.dip0').fadeIn(800);
+        $('.section-3 .section-bg.dip2').fadeOut(800);
     });
     $('.section-3 .fadeY-1').on('mouseleave', function () {
-       $('.section-3 .section-bg').css({'background-color':'black'});
+        $('.section-3 .section-bg.dip0').fadeIn(800);
+        $('.section-3 .section-bg.dip1').fadeOut(800);
     });
 
 
