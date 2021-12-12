@@ -1,16 +1,99 @@
 {% extends 'main.html' %}
-
+{% load static %}
 {% block title %}Образование{% endblock %}
 
 
 {% block content %}
     <div class="animsition">
-    <div class="loader"><div class="spinner"><div class="double-bounce1"></div><div class="double-bounce2"></div></div></div>
+        <div class="loader">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
 
-    <!-- Content CLick Capture-->
+        <!-- Content CLick Capture-->
 
-    <div class="click-capture"></div>
-    {% include 'menu.html' %}
-
+        <div class="click-capture"></div>
+        {% include 'menu.html' %}
+        <div class="pagepiling">
+            <div data-anchor="page3" class="pp-scrollable text-white section section-3">
+                <div class="scroll-wrap">
+                    <div class="section-bg mask dip0" style="background-color: black ;"></div>
+                    <div class="section-bg mask dip1"
+                         style="background-image:url({% static 'images/dip1.jpg' %}); display: none"></div>
+                    <div class="section-bg mask dip2"
+                         style="background-image:url({% static 'images/dip2.jpg' %}); display: none"></div>
+                    <div class="scrollable-content">
+                        <div class="vertical-centred">
+                            <div class="boxed boxed-inner">
+                                <div class="boxed" style="padding-left: 0; margin-left: 0">
+                                    <div class="container" style="margin-left: 0; padding-left: 0; width: 50%">
+                                        <div class="intro">
+                                            <div class="row row-resume">
+                                                <div class="col-md-6 fadeY fadeY-1">
+                                                    <h2 class="resume-header title">Образование</h2>
+                                                    <div class="col-resume">
+                                                        <div class="resume-content">
+                                                            <div class="resume-inner">
+                                                                <div class="resume-row">
+                                                                    <h6 class="resume-type">Specialization course</h6>
+                                                                    <i class="resume-study">University of studies,
+                                                                        Poland, Cracow<br>Jan 2004 - Dec 2006</i>
+                                                                    <p class="resume-text">Lorem ipsum dolor sit amet,
+                                                                        consectetur adipisicing elit. Minus nobis animi
+                                                                        assumenda sint recusandae! Dolor placeat debitis
+                                                                        animi illum quo repellendus pariatur, enim</p>
+                                                                </div>
+                                                                <div class="resume-row">
+                                                                    <h6 class="resume-type">Academy course</h6>
+                                                                    <i class="resume-study">University of studies,
+                                                                        Poland, Cracow<br>Jan 2004 - Dec 2006</i>
+                                                                    <p class="resume-text">Lorem ipsum dolor sit amet,
+                                                                        consectetur adipisicing elit. Minus nobis animi
+                                                                        assumenda sint recusandae! Dolor placeat debitis
+                                                                        animi illum quo repellendus pariatur, enim </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 pt-md-5 mt-md-5 fadeY fadeY-2">
+                                                    <h2 class="resume-header title">Образование</h2>
+                                                    <div class="col-resume">
+                                                        <div class="resume-content">
+                                                            <div class="resume-inner">
+                                                                <div class="resume-row">
+                                                                    <h6 class="resume-type">WEBDESIGNER & FRONT-END</h6>
+                                                                    <i class="resume-study">University of studies,
+                                                                        Poland, Cracow<br>Jan 2004 - Dec 2006</i>
+                                                                    <p class="resume-text">Lorem ipsum dolor sit amet,
+                                                                        consectetur adipisicing elit. Minus nobis animi
+                                                                        assumenda sint recusandae! Dolor placeat debitis
+                                                                        animi illum quo repellendus pariatur, enim</p>
+                                                                </div>
+                                                                <div class="resume-row">
+                                                                    <h6 class="resume-type">WORDPRESS DEVELOPER</h6>
+                                                                    <i class="resume-study">University of studies,
+                                                                        Poland, Cracow<br>Jan 2004 - Dec 2006</i>
+                                                                    <p class="resume-text">Lorem ipsum dolor sit amet,
+                                                                        consectetur adipisicing elit. Minus nobis animi
+                                                                        assumenda sint recusandae! Dolor placeat debitis
+                                                                        animi illum quo repellendus pariatur, enim</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 {% endblock %}
