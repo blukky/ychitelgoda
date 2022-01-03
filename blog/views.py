@@ -1,61 +1,148 @@
 from django.shortcuts import render, redirect
+from .models import CountView
 
 
 # Create your views here.
 
 def index(request):
-    return render(request, 'main.html')
+    c, _ = CountView.objects.get_or_create(id=1)
+    if not c.count_view:
+        c.count_view = 59862
+    c.count_view += 1
+    c.save()
+    return render(request, 'main.html', {'count': c.count_view})
 
 
 def education(request):
-    return render(request, 'education.html')
+    c, _ = CountView.objects.get_or_create(id=1)
+    if not c.count_view:
+        c.count_view = 59862
+    c.count_view += 1
+    c.save()
+    return render(request, 'education.html', {'count': c.count_view})
 
 
 def kurses(request):
-    return render(request, 'kurses.html')
+    c, _ = CountView.objects.get_or_create(id=1)
+    if not c.count_view:
+        c.count_view = 59862
+    c.count_view += 1
+    c.save()
+    return render(request, 'kurses.html', {'count': c.count_view})
 
 
 def advance(request):
-    return render(request, 'advance.html')
+    c, _ = CountView.objects.get_or_create(id=1)
+    if not c.count_view:
+        c.count_view = 59862
+    c.count_view += 1
+    c.save()
+    return render(request, 'advance.html', {'count': c.count_view})
 
 
 def advance_small(request):
-    return render(request, 'advance_small.html')
+    c, _ = CountView.objects.get_or_create(id=1)
+    if not c.count_view:
+        c.count_view = 59862
+    c.count_view += 1
+    c.save()
+    return render(request, 'advance_small.html', {'count': c.count_view})
 
 
 def tests(request):
-    return render(request, 'tests.html')
+    c, _ = CountView.objects.get_or_create(id=1)
+    if not c.count_view:
+        c.count_view = 59862
+    c.count_view += 1
+    c.save()
+    return render(request, 'tests.html', {'count': c.count_view})
 
 
 def kim(request):
-    return render(request, 'kim.html')
+    c, _ = CountView.objects.get_or_create(id=1)
+    if not c.count_view:
+        c.count_view = 59862
+    c.count_view += 1
+    c.save()
+    return render(request, 'kim.html', {'count': c.count_view})
+
 
 def konkurs(request):
-    return render(request, 'konkurs.html')
+    c, _ = CountView.objects.get_or_create(id=1)
+    if not c.count_view:
+        c.count_view = 59862
+    c.count_view += 1
+    c.save()
+    return render(request, 'konkurs.html', {'count': c.count_view})
+
 
 def olimpic(request):
-    return render(request, 'olipiс.html')
+    c, _ = CountView.objects.get_or_create(id=1)
+    if not c.count_view:
+        c.count_view = 59862
+    c.count_view += 1
+    c.save()
+    return render(request, 'olipiс.html', {'count': c.count_view})
+
 
 def work_programm(request):
-    return render(request, 'work_programm.html')
+    c, _ = CountView.objects.get_or_create(id=1)
+    if not c.count_view:
+        c.count_view = 59862
+    c.count_view += 1
+    c.save()
+    return render(request, 'work_programm.html', {'count': c.count_view})
+
 
 def konspect(request):
-    return render(request, 'konspect.html')
+    c, _ = CountView.objects.get_or_create(id=1)
+    if not c.count_view:
+        c.count_view = 59862
+    c.count_view += 1
+    c.save()
+    return render(request, 'konspect.html', {'count': c.count_view})
+
 
 def work_with_parent(request):
-    return render(request, 'work_with_parent.html')
+    c, _ = CountView.objects.get_or_create(id=1)
+    if not c.count_view:
+        c.count_view = 59862
+    c.count_view += 1
+    c.save()
+    return render(request, 'work_with_parent.html', {'count': c.count_view})
+
 
 def present(request):
-    return render(request, 'precent.html')
+    c, _ = CountView.objects.get_or_create(id=1)
+    if not c.count_view:
+        c.count_view = 59862
+    c.count_view += 1
+    c.save()
+    return render(request, 'precent.html', {'count': c.count_view})
+
 
 def akcii(request):
-    return render(request, 'akcii.html')
+    c, _ = CountView.objects.get_or_create(id=1)
+    if not c.count_view:
+        c.count_view = 59862
+    c.count_view += 1
+    c.save()
+    return render(request, 'akcii.html', {'count': c.count_view})
+
 
 def project(request):
-    return render(request, 'project.html')
+    c, _ = CountView.objects.get_or_create(id=1)
+    if not c.count_view:
+        c.count_view = 59862
+    c.count_view += 1
+    c.save()
+    return render(request, 'project.html', {'count': c.count_view})
+
 
 def gallerey(request):
-    return render(request, 'galler.html')
-
-
-
+    c, _ = CountView.objects.get_or_create(id=1)
+    if not c.count_view:
+        c.count_view = 59862
+    c.count_view += 1
+    c.save()
+    return render(request, 'galler.html', {'count': c.count_view})

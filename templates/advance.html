@@ -1,9 +1,38 @@
 {% extends 'main.html' %}
-
+{% load static %}
 {% block title %}Мои достижения{% endblock %}
 
 
 {% block content %}
+    <style type="text/css">
+        .kurses-list {
+            width: 90%;
+            margin-top: 2%;
+        }
+
+        .kurs {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .kurses-name {
+            font-size: 2rem;
+        }
+
+        .kurs-photo {
+            width: 40%;
+            min-width: 40%;
+            margin-right: 3%;
+        }
+
+        .photo {
+            width: 100%;
+            height: auto;
+        }
+    </style>
     <div class="animsition">
         <div class="loader">
             <div class="spinner">
@@ -15,7 +44,245 @@
         <!-- Content CLick Capture-->
 
         <div class="click-capture"></div>
-        {% include 'menu.html' %}
+        {% include 'menu_grad.html' %}
+        <div class="pagepiling">
+            <div class="pp-scrollable section section-6" style="background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 36%, rgba(0,212,255,1) 100%); color: #f7f7f7">
+                <div class="scroll-wrap">
+                    <div class="scrollable-content">
+                        <div class="vertical-title text-white d-none d-lg-block"><span>Мои достижения</span></div>
+                        <div class="vertical-centred">
+                            <div class="boxed boxed-inner">
+                                <div class="boxed">
+                                    <div class="container"
+                                         style="width: 100%; max-width: 1920px; margin-left: 7%; padding-right: 5%">
+                                        <div class="intro">
+                                            <h2 class="title text-white"><span class="text-primary">Мои</span>
+                                                достижения</h2>
+                                            <div class="kurses-list">
+                                                <div class="kurs">
+                                                    <a class="kurs-photo"
+                                                       href="{% static 'images/advanture/diplom.jpg' %}"
+                                                       data-lightbox="bezop"><img class="photo"
+                                                                                  src="{% static 'images/advanture/diplom.jpg' %}"
+                                                                                  alt=""></a>
+                                                    <div class="kurses-name">
+                                                        <span class="text-primary" style="font-size: 2.2rem">Диплом II степени</span>
+                                                        <br>
+                                                        За лучший урок по финансовой грамотности
 
+                                                    </div>
+                                                </div>
+                                                <hr color="#717171"/>
+                                                <div class="kurs">
+                                                    <div class="kurses-name">
+                                                        <span class="text-primary" style="font-size: 2.2rem">Благодарность</span>
+                                                        <br>
+                                                        За вклад в воспитание детей
+                                                    </div>
+                                                    <a class="kurs-photo"
+                                                       href="{% static 'images/advanture/dip1.png' %}"
+                                                       data-lightbox="bezop"><img class="photo"
+                                                                                  src="{% static 'images/advanture/dip1.png' %}"
+                                                                                  alt=""></a>
+                                                </div>
+                                                <hr color="#717171"/>
+                                                <div class="kurs">
+                                                    <a class="kurs-photo"
+                                                       href="{% static 'images/advanture/dip2.jpg' %}"
+                                                       data-lightbox="bezop"><img class="photo"
+                                                                                  src="{% static 'images/advanture/dip2.jpg' %}"
+                                                                                  alt=""></a>
+                                                    <div class="kurses-name">
+                                                        <span class="text-primary"
+                                                              style="font-size: 2.2rem">Грамота</span>
+                                                        <br>
+                                                        За активную работу по наравственному и патриотическому
+                                                        воспитанию подрастающего поколения
+
+                                                    </div>
+                                                </div>
+                                                <hr color="#717171"/>
+                                                <div class="kurs">
+                                                    <div class="kurses-name">
+                                                        <span class="text-primary" style="font-size: 2.2rem">Благодарственное письмо</span>
+                                                        <br>
+                                                        За подготовку участников областной олимпиады среди учащихся
+                                                        10-11 классов
+
+                                                    </div>
+                                                    <a class="kurs-photo"
+                                                       href="{% static 'images/advanture/dip3.jpg' %}"
+                                                       data-lightbox="bezop"><img class="photo"
+                                                                                  src="{% static 'images/advanture/dip3.jpg' %}"
+                                                                                  alt=""></a>
+                                                </div>
+                                                <hr color="#717171"/>
+                                                <div class="kurs">
+                                                    <a class="kurs-photo"
+                                                       href="{% static 'images/advanture/dip6.jpg' %}"
+                                                       data-lightbox="bezop"><img class="photo"
+                                                                                  src="{% static 'images/advanture/dip6.jpg' %}"
+                                                                                  alt=""></a>
+                                                    <div class="kurses-name">
+                                                        <span class="text-primary" style="font-size: 2.2rem">Диплом I степени</span>
+                                                        <br>
+                                                        За муниципальный этап областного конкурса методических
+                                                        разработок педагогов по формированию антикоррупционного
+                                                        мировоззреня и повышения общего уровня правосознания и правовой
+                                                        культуры школьников
+
+                                                    </div>
+                                                </div>
+                                                <hr color="#717171"/>
+                                                <div class="kurs">
+
+                                                    <div class="kurses-name">
+                                                        <span class="text-primary"
+                                                              style="font-size: 2.2rem">Свидельство</span>
+                                                        <br>
+                                                        За публикацию материала "Технологическая карта урока на тему
+                                                        "Основы конституционного строя РФ""
+
+                                                    </div>
+                                                    <a class="kurs-photo"
+                                                       href="{% static 'images/advanture/dip7.png' %}"
+                                                       data-lightbox="bezop"><img class="photo"
+                                                                                  src="{% static 'images/advanture/dip7.png' %}"
+                                                                                  alt=""></a>
+                                                </div>
+                                                <hr color="#717171"/>
+                                                <div class="kurs">
+                                                    <a class="kurs-photo"
+                                                       href="{% static 'images/advanture/dip8.jpg' %}"
+                                                       data-lightbox="bezop"><img class="photo"
+                                                                                  src="{% static 'images/advanture/dip8.jpg' %}"
+                                                                                  alt=""></a>
+                                                    <div class="kurses-name">
+                                                        <span class="text-primary" style="font-size: 2.2rem">Свидетельство</span>
+                                                        <br>
+                                                        За публикацию на сайте infourok.ru методической разработки
+                                                        презентации по истории России на тему: "Экономическая модель
+                                                        сталинизма"
+
+                                                    </div>
+                                                </div>
+                                                <hr color="#717171"/>
+                                                <div class="kurs">
+                                                    <div class="kurses-name">
+                                                        <span class="text-primary" style="font-size: 2.2rem">Благодарственное письмо</span>
+                                                        <br>
+                                                        За добросоветный, результативный труд, значительные успехи в
+                                                        деле обучения и воспитания подрастающего поколения
+
+                                                    </div>
+                                                    <a class="kurs-photo"
+                                                       href="{% static 'images/advanture/dip5.png' %}"
+                                                       data-lightbox="bezop"><img class="photo"
+                                                                                  src="{% static 'images/advanture/dip5.png' %}"
+                                                                                  alt=""></a>
+                                                </div>
+                                                <hr color="#717171"/>
+                                                <div class="kurs">
+                                                    <a class="kurs-photo"
+                                                       href="{% static 'images/advanture/dip10.png' %}"
+                                                       data-lightbox="bezop"><img class="photo"
+                                                                                  src="{% static 'images/advanture/dip10.png' %}"
+                                                                                  alt=""></a>
+                                                    <div class="kurses-name">
+                                                        <span class="text-primary" style="font-size: 2.2rem">Свидетельство</span>
+                                                        <br>
+                                                        За публикацию материала "Методическая разработка урока по
+                                                        обществознанию на тему: "Местное самоуправление как форма
+                                                        народовластия""
+
+
+                                                    </div>
+                                                </div>
+                                                <hr color="#717171"/>
+                                                <div class="kurs">
+
+                                                    <div class="kurses-name">
+                                                        <span class="text-primary" style="font-size: 2.2rem">Диплом II степени</span>
+                                                        <br>
+                                                        За лучшую практику правового анализа местного самоуправления при
+                                                        проведении урока
+
+                                                    </div>
+                                                    <a class="kurs-photo"
+                                                       href="{% static 'images/advanture/dip11.png' %}"
+                                                       data-lightbox="bezop"><img class="photo"
+                                                                                  src="{% static 'images/advanture/dip11.png' %}"
+                                                                                  alt=""></a>
+                                                </div>
+                                                <hr color="#717171"/>
+                                                <div class="kurs">
+                                                    <a class="kurs-photo"
+                                                       href="{% static 'images/advanture/dip12.png' %}"
+                                                       data-lightbox="bezop"><img class="photo"
+                                                                                  src="{% static 'images/advanture/dip12.png' %}"
+                                                                                  alt=""></a>
+                                                    <div class="kurses-name">
+                                                        <span class="text-primary" style="font-size: 2.2rem">Диплом I степени на уровне субьекта Федерации</span>
+                                                        <br>
+                                                        За экспертный совет по информацизации системы образования и
+                                                        воспитания при Временной комиссии по развитию информационного
+                                                        общества Совета Федерации
+                                                    </div>
+                                                </div>
+                                                <hr color="#717171"/>
+                                                <div class="kurs">
+                                                    <div class="kurses-name">
+                                                        <span class="text-primary" style="font-size: 2.2rem">Диплом I степени</span>
+                                                        <br>
+                                                        За региональный конкурс методических разработок по формированию
+                                                        антикоррупционного мировоззрения и повышения общего уровня
+                                                        правосознания и правовой культуры школьников
+
+                                                    </div>
+                                                    <a class="kurs-photo"
+                                                       href="{% static 'images/advanture/dip13.jpg' %}"
+                                                       data-lightbox="bezop"><img class="photo"
+                                                                                  src="{% static 'images/advanture/dip13.jpg' %}"
+                                                                                  alt=""></a>
+                                                </div>
+                                                <hr color="#717171"/>
+                                                <div class="kurs">
+                                                    <a class="kurs-photo"
+                                                       href="{% static 'images/advanture/dip14.jpg' %}"
+                                                       data-lightbox="bezop"><img class="photo"
+                                                                                  src="{% static 'images/advanture/dip14.jpg' %}"
+                                                                                  alt=""></a>
+                                                    <div class="kurses-name">
+                                                        <span class="text-primary" style="font-size: 2.2rem">Диплом I степени</span>
+                                                        <br>
+                                                        За конкурс "Готовим ученика к жизни в обществе"
+
+                                                    </div>
+                                                </div>
+                                                <hr color="#717171"/>
+                                                <div class="kurs">
+                                                    <div class="kurses-name">
+                                                        <span class="text-primary" style="font-size: 2.2rem">Благодарность</span>
+                                                        <br>
+                                                        За содейтсвие в организации и проведении 1 Всероссийского форума
+                                                        классных руководителей
+                                                    </div>
+                                                    <a class="kurs-photo"
+                                                       href="{% static 'images/advanture/dip15.jpg' %}"
+                                                       data-lightbox="bezop"><img class="photo"
+                                                                                  src="{% static 'images/advanture/dip15.jpg' %}"
+                                                                                  alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 {% endblock %}

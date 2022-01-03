@@ -1,0 +1,149 @@
+{% load static %}
+<div class="menu">
+    <style type="text/css">
+        ul li a {
+            display: flex
+
+        }
+
+        .href {
+            color: #636363;
+            font-size: 1.4rem;
+            text-decoration: none;
+
+        }
+
+        .href:hover {
+            text-decoration: none;
+            color: white;
+        }
+
+        .arrow {
+            margin-left: 1%;
+            -webkit-transition-duration: 0.8s;
+            -moz-transition-duration: 0.8s;
+            -o-transition-duration: 0.8s;
+            transition-duration: 0.8s;
+
+            -webkit-transition-property: -webkit-transform;
+            -moz-transition-property: -moz-transform;
+            -o-transition-property: -o-transform;
+            transition-property: transform;
+
+        }
+    </style>
+    <span class="close-menu icon-cross2 right-boxed"></span>
+    <ul class="menu-list right-boxed">
+        <li>
+            <a href="{% url 'index' %}">Главная</a>
+        </li>
+        <li>
+            <a href="#" data-value="div1">О себе
+                <div class="arrow">></div>
+            </a>
+        </li>
+        <div id="div1" class="mt-1 ml-3" style="display: none">
+            <a class="href" href="{% url 'education' %}">Образование</a>
+            <hr color="white" style="margin: 0"/>
+            <a class="href" href="{% url 'kurses' %}">Курсы повышения квалификации</a>
+        </div>
+        <li>
+            <a href="#" data-value="div2">Мое портфолио
+                <div class="arrow"> ></div>
+            </a>
+        </li>
+        <div id="div2" class="mt-1 ml-3" style="display: none">
+            <a class="href" href="{% url 'advance' %}">Мои достижения</a>
+            <hr color="white" style="margin: 0"/>
+            <a class="href" href="{% url 'advance_small' %}">Достижения моих учеников</a>
+        </div>
+        <li>
+            <a href="#" data-value="div3">Моим ученикам
+                <div class="arrow"> ></div>
+            </a>
+        </li>
+        <div id="div3" class="mt-1 ml-3" style="display: none">
+            <a class="href" href="{% url 'tests' %}">Тесты</a>
+            <hr color="white" style="margin: 0"/>
+            <a class="href" href="{% url 'kim' %}">КИМы</a>
+            <hr color="white" style="margin: 0"/>
+            <a class="href" href="{% url 'konkurs' %}">Конкурсные задания</a>
+            <hr color="white" style="margin: 0"/>
+            <a class="href" href="{% url 'konspect' %}">Олимпиады</a>
+        </div>
+        <li>
+            <a href="#" data-value="div4">Моим коллегам
+                <div class="arrow"> ></div>
+            </a>
+        </li>
+        <div id="div4" class="mt-1 ml-3" style="display: none">
+            <a class="href" href="{% url 'work_programm' %}">Статьи</a>
+            <hr color="white" style="margin: 0"/>
+            <a class="href" href="{% url 'konspect' %}">Конспекты уроков</a>
+            <hr color="white" style="margin: 0"/>
+            <a class="href" href="{% url 'work_with_parent' %}">Работа с родителями</a>
+            <hr color="white" style="margin: 0"/>
+            <a class="href" href="{% url 'present' %}">Презентации</a>
+        </div>
+        <li>
+            <a href="#" data-value="div5">Мы вместе
+                <div class="arrow"> ></div>
+            </a>
+        </li>
+        <div id="div5" class="mt-1 ml-3" style="display: none">
+            <a class="href" href="{% url 'akcii' %}">Акции</a>
+            <hr color="white" style="margin: 0"/>
+            <a class="href" href="{% url 'project' %}">Проекты</a>
+        </div>
+        <li>
+            <a href="{% url 'gallerey' %}">Фотоальбом</a>
+        </li>
+    </ul>
+    <div class="menu-footer right-boxed">
+        <div class="social-list">
+            <a href="https://edu.gov.ru/" class="icon"><img width="20px" height="20px"
+                                                            src="https://edu.gov.ru/application/frontend/skin/default/assets/images/mono_logo.svg"
+                                                            alt=""></a>
+            <a href="https://minobr-penza.ru/" class="icon"><img width="20px" height="20px"
+                                                                 src="{% static 'mdoy-zarech-1.png' %}" alt=""></a>
+            <a href="http://uokuzneck.ucoz.ru/" class="icon"><img width="20px" height="20px"
+                                                                  src="{% static 'kuzn.png' %}" alt=""></a>
+            <a href="https://рдш.рф/" class="icon "><img width="20px" height="20px" src="{% static 'rdsh.svg' %}"
+                                                         alt=""></a>
+            <a href="https://dobrovolcirossii.ru/" class="icon "><img width="20px" height="20px"
+                                                                      src="{% static 'volon.jpg' %}" alt=""></a>
+            <a href="https://www.gto.ru/" class="icon"><img width="20px" height="20px" src="{% static 'gto.png' %}"
+                                                            alt=""></a>
+        </div>
+        <div class="copy">© StarTrek 2021.</div>
+    </div>
+</div>
+<header class="navbar navbar-fullpage boxed" >
+    <div class="navbar-bg" style="background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 40%, rgba(0,212,255,1) 100%);"></div>
+    <a class="brand" href="{% url 'index' %}">
+        <img alt="" src="{% static 'images/brand.png' %}">
+        <div class="brand-info">
+            <div style="color: #f7f7f7" class="brand-name">Леонова</div>
+        </div>
+    </a>
+
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse"
+            aria-expanded="false">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+
+    <div class="contacts d-none d-md-block">
+        <div style="color: #f7f7f7" class="contact-item">
+            +96 56-85-1379
+        </div>
+        <div style="color: #f7f7f7" class="contact-item spacer">
+            /
+        </div>
+        <div  class="contact-item">
+            <a style="color: #f7f7f7" href="mailto:contact@Ramsay.com">leonova.kristina2101@yandex.ru</a>
+        </div>
+    </div>
+</header>

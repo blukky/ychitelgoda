@@ -15,14 +15,16 @@
     <link rel="apple-touch-icon" sizes="72x72" href="{% static 'apple-touch-icon-72x72.png' %}">
     <link rel="apple-touch-icon" sizes="114x114" href="{% static 'apple-touch-icon-114x114.png' %}">
 
-    <title>{% block title %}Сайт учителя истории{% endblock %}</title>
+    <title>{% block title %}Сайт учителя истории и обществознания{% endblock %}</title>
 
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i&display=swap" rel="stylesheet">
+    <link href="{% static 'css/lightbox.css' %}" rel="stylesheet">
     <link href="{% static 'css/style.css' %}" rel="stylesheet" media="screen">
 </head>
 <body>
+
 {% block content %}
 
     <div class="animsition">
@@ -72,12 +74,19 @@
         {#    </header>#}
         {#    <div class="copy-bottom white boxed two">© StarTrek 2021.</div>#}
         <div class="social-list social-list-bottom boxed">
-            <a href="https://edu.gov.ru/" class="icon"><img width="20px" height="20px" src="https://edu.gov.ru/application/frontend/skin/default/assets/images/mono_logo.svg" alt=""></a>
-            <a href="https://minobr-penza.ru/" class="icon"><img width="20px" height="20px" src="{% static 'mdoy-zarech-1.png' %}" alt=""></a>
-            <a href="http://uokuzneck.ucoz.ru/" class="icon"><img width="20px" height="20px" src="{% static 'kuzn.png' %}" alt=""></a>
-            <a href="https://рдш.рф/" class="icon "><img width="20px" height="20px" src="{% static 'rdsh.svg' %}" alt=""></a>
-            <a href="https://dobrovolcirossii.ru/" class="icon "><img width="20px" height="20px" src="{% static 'volon.jpg' %}" alt=""></a>
-            <a href="https://www.gto.ru/" class="icon"><img width="20px" height="20px" src="{% static 'gto.png' %}" alt=""></a>
+            <a href="https://edu.gov.ru/" class="icon"><img width="20px" height="20px"
+                                                            src="https://edu.gov.ru/application/frontend/skin/default/assets/images/mono_logo.svg"
+                                                            alt=""></a>
+            <a href="https://minobr-penza.ru/" class="icon"><img width="20px" height="20px"
+                                                                 src="{% static 'mdoy-zarech-1.png' %}" alt=""></a>
+            <a href="http://uokuzneck.ucoz.ru/" class="icon"><img width="20px" height="20px"
+                                                                  src="{% static 'kuzn.png' %}" alt=""></a>
+            <a href="https://рдш.рф/" class="icon "><img width="20px" height="20px" src="{% static 'rdsh.svg' %}"
+                                                         alt=""></a>
+            <a href="https://dobrovolcirossii.ru/" class="icon "><img width="20px" height="20px"
+                                                                      src="{% static 'volon.jpg' %}" alt=""></a>
+            <a href="https://www.gto.ru/" class="icon"><img width="20px" height="20px" src="{% static 'gto.png' %}"
+                                                            alt=""></a>
         </div>
         <div class="pagepiling">
             <div data-anchor="page1" class="pp-scrollable text-white section section-1">
@@ -104,10 +113,13 @@
                     </div>
                 </div>
             </div>
-            <div data-anchor="page2" class="pp-scrollable section section-2">
+            <div data-anchor="page2" class="pp-scrollable section section-2" style="background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);">
                 <div class="scroll-wrap">
                     <div class="scrollable-content">
-                        <div class="vertical-title text-white  d-none d-lg-block"><span>Приветственное слово</span></div>
+                        <div class="vertical-title text-white  d-none d-lg-block" style="font-size: 6rem; opacity: .1">
+                            <span style="color: #df7e8a">Приветственное слово</span>
+                        </div>
                         <div class="vertical-centred">
                             <div class="boxed boxed-inner">
                                 <div class="boxed">
@@ -116,31 +128,36 @@
                                             <h2 class="title mb-5 pb-5">Приветственное слово</h2>
                                             <div class="row-specialization row">
                                                 <div class="col-specialization col-md-6 col-lg-4">
-                                                    <span class="icon-specialization icon-laptop-phone"></span>
-                                                    <h4 class="text-uppercase">Mobile Design</h4>
-                                                    <p>Working with client and community, we deliver masterplans that
+                                                    <img src="{% static 'images/kollegi.svg' %}" width="64px"
+                                                         height="64px" alt="">
+                                                    <h4 class="text-uppercase" style="color: #c32865 ">Коллегам</h4>
+                                                    <p style="color: #f7f7f7">Working with client and community, we
+                                                        deliver masterplans that
                                                         create vibrant new places and spaces, attract people, and
                                                         encourage investment through.</p>
                                                 </div>
                                                 <div class="col-specialization col-md-6 col-lg-4">
-                                                    <span class="icon-specialization icon-smartphone-embed"></span>
-                                                    <h4 class="text-uppercase">Coding</h4>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum
+                                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                         width="64" height="64"
+                                                         viewBox="0 0 30 30"
+                                                         style=" fill:#c32865;">
+                                                        <path d="M 7 2 C 5.343 2 4 3.343 4 5 C 4 6.657 5.343 8 7 8 C 8.657 8 10 6.657 10 5 C 10 3.343 8.657 2 7 2 z M 23 2 C 21.343 2 20 3.343 20 5 C 20 6.657 21.343 8 23 8 C 24.657 8 26 6.657 26 5 C 26 3.343 24.657 2 23 2 z M 26.001953 6.0019531 C 26.001953 6.0019531 25.924953 7.4210469 26.751953 8.2480469 C 27.578953 9.0750469 28.998047 8.9980469 28.998047 8.9980469 C 28.998047 8.9980469 29.075047 7.5789531 28.248047 6.7519531 C 27.421047 5.9249531 26.001953 6.0019531 26.001953 6.0019531 z M 6 10 C 4.3550302 10 3 11.35503 3 13 L 3 19 A 1.0001 1.0001 0 0 0 4 20.013672 L 4 25.966797 C 4 26.536797 4.4632031 27 5.0332031 27 C 5.5772031 27 6.0284531 26.578156 6.0644531 26.035156 L 6.5019531 19.464844 C 6.5199531 19.203844 6.737 19 7 19 C 7.263 19 7.4800469 19.204797 7.4980469 19.466797 L 7.9355469 26.035156 C 7.9715469 26.577156 8.4227969 27 8.9667969 27 C 9.5367969 27 10 26.536797 10 25.966797 L 10 20.179688 A 1.0001 1.0001 0 0 0 11.675781 20.738281 A 1.0003551 1.0003551 0 0 0 11.707031 20.707031 L 12.425781 19.990234 L 12.001953 25.929688 A 1.0005207 1.0005207 0 0 0 13.966797 26.253906 A 1.0005207 1.0005207 0 0 0 13.966797 26.25 A 1.0005207 1.0005207 0 0 0 13.998047 26.070312 L 14.003906 25.998047 L 14.388672 23.292969 C 14.489672 22.584969 15.512281 22.584969 15.613281 23.292969 L 15.994141 25.970703 L 16.001953 26.070312 A 1.0005207 1.0005207 0 1 0 17.998047 25.929688 L 17.574219 19.988281 L 18.273438 20.6875 A 1.0003371 1.0003371 0 0 0 18.322266 20.736328 A 1.0001 1.0001 0 0 0 20 20.175781 L 20 25.966797 C 20 26.536797 20.463203 27 21.033203 27 C 21.577203 27 22.028453 26.578156 22.064453 26.035156 L 22.400391 21 L 23.599609 21 L 23.935547 26.035156 C 23.971547 26.577156 24.422797 27 24.966797 27 C 25.536797 27 26 26.536797 26 25.966797 L 26 21 L 27 21 A 1.0003371 1.0003371 0 0 0 27.976562 19.783203 L 26.408203 12.734375 C 26.053841 11.142375 24.629953 10 23 10 C 21.370047 10 19.946159 11.142375 19.591797 12.734375 L 18.404297 18.068359 C 17.502374 17.383342 16.399266 17 15.253906 17 L 14.746094 17 C 13.677012 17 12.644058 17.331962 11.777344 17.933594 L 11.191406 12.667969 C 11.022878 11.157179 9.7310824 10 8.2109375 10 L 6 10 z M 15 12 C 13.895 12 13 12.895 13 14 C 13 15.105 13.895 16 15 16 C 16.105 16 17 15.105 17 14 C 17 12.895 16.105 12 15 12 z"></path>
+                                                    </svg>
+                                                    <h4 class="text-uppercase" style="color: #c32865 ">Родителям</h4>
+                                                    <p style="color: #f7f7f7">Lorem ipsum dolor sit amet, consectetur
+                                                        adipisicing elit. Rerum
                                                         fuga dicta voluptatum hic aut aspernatur magnam voluptates
                                                         itaque atque quae laudantium, tempora at.</p>
                                                 </div>
                                                 <div class="col-specialization col-md-6 col-lg-4">
-                                                    <span class="icon-specialization icon-diamond2"></span>
-                                                    <h4 class="text-uppercase">Illustration</h4>
-                                                    <p>Working with client and community, we deliver masterplans that
+                                                    <img src="{% static 'images/student.svg' %}" width="64px"
+                                                         height="64px" alt="">
+                                                    <h4 class="text-uppercase" style="color: #c32865 ">Ученикам</h4>
+                                                    <p style="color: #f7f7f7">Working with client and community, we
+                                                        deliver masterplans that
                                                         create vibrant new places and spaces, attract people, and
                                                         encourage investment through.</p>
                                                 </div>
-                                            </div>
-                                            <div class="view-all">
-                                                <a href="#">
-                                                    Download resume
-                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -151,419 +168,287 @@
                 </div>
             </div>
 
-{#            <div data-anchor="page4" class="pp-scrollable section section-4">#}
-{#                <div class="scroll-wrap">#}
-{#                    <div class="section-bg bg-about"#}
-{#                         style="background-image:url({% static 'images/bg/about.jpg' %});"></div>#}
-{#                    <div class="scrollable-content">#}
-{#                        <div class="vertical-title text-white  d-none d-lg-block"><span>about us</span></div>#}
-{#                        <div class="vertical-centred">#}
-{#                            <div class="boxed boxed-inner">#}
-{#                                <div class="boxed">#}
-{#                                    <div class="container">#}
-{#                                        <div class="intro">#}
-{#                                            <div class="row align-items-center">#}
-{#                                                <div class="col-lg-6 offset-xl-1">#}
-{#                                                    <div class="experience-box">#}
-{#                                                        <div class="experience-content">#}
-{#                                                            <div class="experience-number">4</div>#}
-{#                                                            <div class="experience-info">#}
-{#                                                                <div>Years<br>Experience<br>Working</div>#}
-{#                                                            </div>#}
-{#                                                        </div>#}
-{#                                                    </div>#}
-{#                                                </div>#}
-{#                                                <div class="col-lg-5 mt-5 mt-xl-0">#}
-{#                                                    <h2 class="title"><span class="text-primary">The best</span>#}
-{#                                                        websites</h2>#}
-{#                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.#}
-{#                                                    Accusantium dicta sit pariatur odio unde deleniti eveniet.#}
-{#                                                    <div class="progress-bars">#}
-{#                                                        <div class="clearfix">#}
-{#                                                            <div class="number float-left">Mobile Design</div>#}
-{#                                                            <div class="number float-right">80%</div>#}
-{#                                                        </div>#}
-{#                                                        <div class="progress">#}
-{#                                                            <div class="progress-bar-wrp">#}
-{#                                                                <div class="progress-bar" role="progressbar"#}
-{#                                                                     style="width: 80%" aria-valuenow="0"#}
-{#                                                                     aria-valuemin="0" aria-valuemax="100"></div>#}
-{#                                                            </div>#}
-{#                                                        </div>#}
-{#                                                        <div class="clearfix">#}
-{#                                                            <div class="number float-left">Coding</div>#}
-{#                                                            <div class="number float-right">70%</div>#}
-{#                                                        </div>#}
-{#                                                        <div class="progress">#}
-{#                                                            <div class="progress-bar-wrp">#}
-{#                                                                <div class="progress-bar" role="progressbar"#}
-{#                                                                     style="width: 70%" aria-valuenow="25"#}
-{#                                                                     aria-valuemin="0" aria-valuemax="100"></div>#}
-{#                                                            </div>#}
-{#                                                        </div>#}
-{#                                                        <div class="clearfix">#}
-{#                                                            <div class="number float-left">Illustration</div>#}
-{#                                                            <div class="number float-right">70%</div>#}
-{#                                                        </div>#}
-{#                                                        <div class="progress">#}
-{#                                                            <div class="progress-bar-wrp">#}
-{#                                                                <div class="progress-bar" role="progressbar"#}
-{#                                                                     style="width: 70%" aria-valuenow="25"#}
-{#                                                                     aria-valuemin="0" aria-valuemax="100"></div>#}
-{#                                                            </div>#}
-{#                                                        </div>#}
-{#                                                    </div>#}
-{#                                                </div>#}
-{#                                            </div>#}
-{#                                        </div>#}
-{#                                    </div>#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                </div>#}
-{#            </div>#}
-{#            <div data-anchor="page5" class="pp-scrollable text-white section section-5">#}
-{#                <div class="scroll-wrap">#}
-{#                    <div class="bg-changer">#}
-{#                        <div class="section-bg"#}
-{#                             style="background-image:url({% static 'images/bg/project1.jpg' %});"></div>#}
-{#                        <div class="section-bg"#}
-{#                             style="background-image:url({% static 'images/bg/project2.jpg' %});"></div>#}
-{#                        <div class="section-bg"#}
-{#                             style="background-image:url({% static 'images/bg/project3.jpg' %});"></div>#}
-{#                        <div class="section-bg"#}
-{#                             style="background-image:url({% static 'images/bg/project4.jpg' %});"></div>#}
-{#                    </div>#}
-{#                    <div class="scrollable-content">#}
-{#                        <div class="vertical-title  d-none d-lg-block"><span>my works</span></div>#}
-{#                        <div class="vertical-centred">#}
-{#                            <div class="boxed boxed-inner">#}
-{#                                <div class="boxed">#}
-{#                                    <div class="container">#}
-{#                                        <div class="intro">#}
-{#                                            <div class="row">#}
-{#                                                <div class="col-md-12">#}
-{#                                                    <div class="project-row">#}
-{#                                                        <a class="active" href="{% static 'project-detail.html' %}">#}
-{#                                                            <span class="project-number">01</span>#}
-{#                                                            <h2 class="project-title">Всероссийский уровень</h2>#}
-{#                                                            <div class="project-category">Illustration</div>#}
-{#                                                        </a>#}
-{#                                                    </div>#}
-{#                                                    <div class="project-row">#}
-{#                                                        <a href="{% static 'project-detail.html' %}">#}
-{#                                                            <span class="project-number">02</span>#}
-{#                                                            <h2 class="project-title">Региональный уровень</h2>#}
-{#                                                            <div class="project-category">Branding</div>#}
-{#                                                        </a>#}
-{#                                                    </div>#}
-{#                                                    <div class="project-row">#}
-{#                                                        <a href="{% static 'project-detail.html' %}">#}
-{#                                                            <span class="project-number">03</span>#}
-{#                                                            <h2 class="project-title">Муниципальный уровень</h2>#}
-{#                                                            <div class="project-category">Mobile Design</div>#}
-{#                                                        </a>#}
-{#                                                    </div>#}
-{#                                                </div>#}
-{#                                            </div>#}
-{#                                        </div>#}
-{#                                    </div>#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                </div>#}
-{#            </div>#}
-{#            <div data-anchor="page6" class="pp-scrollable section section-6">#}
-{#                <div class="scroll-wrap">#}
-{#                    <div class="scrollable-content">#}
-{#                        <div class="vertical-title text-white d-none d-lg-block"><span>partners</span></div>#}
-{#                        <div class="vertical-centred">#}
-{#                            <div class="boxed boxed-inner">#}
-{#                                <div class="boxed">#}
-{#                                    <div class="container">#}
-{#                                        <div class="intro">#}
-{#                                            <h2 class="title text-white"><span class="text-primary">Trusted</span> from#}
-{#                                                Clients</h2>#}
-{#                                            <div class="row row-partners">#}
-{#                                                <div class="col-sm-6 col-md-4 col-xl-3 col-partner">#}
-{#                                                    <div class="partner-inner"><img alt=""#}
-{#                                                                                    src="static/images/partners/1.png">#}
-{#                                                    </div>#}
-{#                                                </div>#}
-{#                                                <div class="col-sm-6 col-md-4 col-xl-3 col-partner">#}
-{#                                                    <div class="partner-inner"><img alt=""#}
-{#                                                                                    src="static/images/partners/2.png">#}
-{#                                                    </div>#}
-{#                                                </div>#}
-{#                                                <div class="col-sm-6 col-md-4 col-xl-3 col-partner">#}
-{#                                                    <div class="partner-inner"><img alt=""#}
-{#                                                                                    src="static/images/partners/3.png">#}
-{#                                                    </div>#}
-{#                                                </div>#}
-{#                                                <div class="col-sm-6 col-md-4 col-xl-3 col-partner">#}
-{#                                                    <div class="partner-inner"><img alt=""#}
-{#                                                                                    src="static/images/partners/4.png">#}
-{#                                                    </div>#}
-{#                                                </div>#}
-{#                                                <div class="col-sm-6 col-md-4 col-xl-3 col-partner">#}
-{#                                                    <div class="partner-inner"><img alt=""#}
-{#                                                                                    src="static/images/partners/5.png">#}
-{#                                                    </div>#}
-{#                                                </div>#}
-{#                                                <div class="col-sm-6 col-md-4 col-xl-3 col-partner">#}
-{#                                                    <div class="partner-inner"><img alt=""#}
-{#                                                                                    src="static/images/partners/6.png">#}
-{#                                                    </div>#}
-{#                                                </div>#}
-{#                                                <div class="col-sm-6 col-md-4 col-xl-3 col-partner">#}
-{#                                                    <div class="partner-inner"><img alt=""#}
-{#                                                                                    src="static/images/partners/7.png">#}
-{#                                                    </div>#}
-{#                                                </div>#}
-{#                                                <div class="col-sm-6 col-md-4 col-xl-3 col-partner">#}
-{#                                                    <div class="partner-inner"><img alt=""#}
-{#                                                                                    src="static/images/partners/8.png">#}
-{#                                                    </div>#}
-{#                                                </div>#}
-{#                                                <div class="col-sm-6 col-md-4 col-xl-3 col-partner">#}
-{#                                                    <div class="partner-inner"><img alt=""#}
-{#                                                                                    src="static/images/partners/9.png">#}
-{#                                                    </div>#}
-{#                                                </div>#}
-{#                                                <div class="col-sm-6 col-md-4 col-xl-3 col-partner">#}
-{#                                                    <div class="partner-inner"><img alt=""#}
-{#                                                                                    src="static/images/partners/10.png">#}
-{#                                                    </div>#}
-{#                                                </div>#}
-{#                                                <div class="col-sm-6 col-md-4 col-xl-3 col-partner">#}
-{#                                                    <div class="partner-inner"><img alt=""#}
-{#                                                                                    src="static/images/partners/11.png">#}
-{#                                                    </div>#}
-{#                                                </div>#}
-{#                                                <div class="col-sm-6 col-md-4 col-xl-3 col-partner">#}
-{#                                                    <div class="partner-inner"><img alt=""#}
-{#                                                                                    src="static/images/partners/12.png">#}
-{#                                                    </div>#}
-{#                                                </div>#}
-{#                                            </div>#}
-{#                                        </div>#}
-{#                                    </div>#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                </div>#}
-{#            </div>#}
-{#            <div data-anchor="page7" class="pp-scrollable text-white section section-7">#}
-{#                <div class="scroll-wrap">#}
-{#                    <div class="section-bg" style="background-image:url({% static 'images/bg/reviews.jpg' %});"></div>#}
-{#                    <div class="bg-quote"></div>#}
-{#                    <div class="scrollable-content">#}
-{#                        <div class="vertical-title  d-none d-lg-block"><span>testimonials</span></div>#}
-{#                        <div class="vertical-centred">#}
-{#                            <div class="boxed boxed-inner">#}
-{#                                <div class="boxed">#}
-{#                                    <div class="container">#}
-{#                                        <div class="intro">#}
-{#                                            <div class="review-carousel owl-carousel">#}
-{#                                                <div class="review-carousel-item">#}
-{#                                                    <div class="review-row">#}
-{#                                                        <div class="row">#}
-{#                                                            <div class="col-md-5">#}
-{#                                                                <div class="review-author">#}
-{#                                                                    <div class="author-name">David & Elisa</div>#}
-{#                                                                    <i>Apartment view lake at Brooklyn</i>#}
-{#                                                                </div>#}
-{#                                                            </div>#}
-{#                                                            <div class="col-md-7 text">#}
-{#                                                                <p>If you are seeking an Interior designer that will#}
-{#                                                                    understand exactly your needs, and someone who will#}
-{#                                                                    utilise their creative and technical skills in#}
-{#                                                                    parity with your taste, then Suzanne at The Ramsay#}
-{#                                                                    Studio is perfect.</p>#}
-{#                                                            </div>#}
-{#                                                        </div>#}
-{#                                                    </div>#}
-{#                                                    <div class="review-row">#}
-{#                                                        <div class="row">#}
-{#                                                            <div class="col-md-5">#}
-{#                                                                <div class="review-author">#}
-{#                                                                    <div class="author-name">Amanda</div>#}
-{#                                                                    <i>Apartment view lake at Brooklyn</i>#}
-{#                                                                </div>#}
-{#                                                            </div>#}
-{#                                                            <div class="col-md-7 text">#}
-{#                                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing#}
-{#                                                                    elit. Odio dolorem reiciendis doloremque veniam#}
-{#                                                                    perspiciatis quam velit pariatur eius, repellendus#}
-{#                                                                    dolores eveniet maiores sed. Quod quam minus dolore#}
-{#                                                                    sed cumque aliquid.</p>#}
-{#                                                            </div>#}
-{#                                                        </div>#}
-{#                                                    </div>#}
-{#                                                </div>#}
-{#                                                <div class="review-carousel-item">#}
-{#                                                    <div class="review-row">#}
-{#                                                        <div class="row">#}
-{#                                                            <div class="col-md-5">#}
-{#                                                                <div class="review-author">#}
-{#                                                                    <div class="author-name">David & Elisa</div>#}
-{#                                                                    <i>Apartment view lake at Brooklyn</i>#}
-{#                                                                </div>#}
-{#                                                            </div>#}
-{#                                                            <div class="col-md-7 text">#}
-{#                                                                <p>If you are seeking an Interior designer that will#}
-{#                                                                    understand exactly your needs, and someone who will#}
-{#                                                                    utilise their creative and technical skills in#}
-{#                                                                    parity with your taste, then Suzanne at The Ramsay#}
-{#                                                                    Studio is perfect.</p>#}
-{#                                                            </div>#}
-{#                                                        </div>#}
-{#                                                    </div>#}
-{#                                                    <div class="review-row">#}
-{#                                                        <div class="row">#}
-{#                                                            <div class="col-md-5">#}
-{#                                                                <div class="review-author">#}
-{#                                                                    <div class="author-name">Amanda</div>#}
-{#                                                                    <i>Apartment view lake at Brooklyn</i>#}
-{#                                                                </div>#}
-{#                                                            </div>#}
-{#                                                            <div class="col-md-7 text">#}
-{#                                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing#}
-{#                                                                    elit. Odio dolorem reiciendis doloremque veniam#}
-{#                                                                    perspiciatis quam velit pariatur eius, repellendus#}
-{#                                                                    dolores eveniet maiores sed. Quod quam minus dolore#}
-{#                                                                    sed cumque aliquid.</p>#}
-{#                                                            </div>#}
-{#                                                        </div>#}
-{#                                                    </div>#}
-{#                                                </div>#}
-{#                                                <div class="review-carousel-item">#}
-{#                                                    <div class="review-row">#}
-{#                                                        <div class="row">#}
-{#                                                            <div class="col-md-5">#}
-{#                                                                <div class="review-author">#}
-{#                                                                    <div class="author-name">David & Elisa</div>#}
-{#                                                                    <i>Apartment view lake at Brooklyn</i>#}
-{#                                                                </div>#}
-{#                                                            </div>#}
-{#                                                            <div class="col-md-7 text">#}
-{#                                                                <p>If you are seeking an Interior designer that will#}
-{#                                                                    understand exactly your needs, and someone who will#}
-{#                                                                    utilise their creative and technical skills in#}
-{#                                                                    parity with your taste, then Suzanne at The Ramsay#}
-{#                                                                    Studio is perfect.</p>#}
-{#                                                            </div>#}
-{#                                                        </div>#}
-{#                                                    </div>#}
-{#                                                    <div class="review-row">#}
-{#                                                        <div class="row">#}
-{#                                                            <div class="col-md-5">#}
-{#                                                                <div class="review-author">#}
-{#                                                                    <div class="author-name">Amanda</div>#}
-{#                                                                    <i>Apartment view lake at Brooklyn</i>#}
-{#                                                                </div>#}
-{#                                                            </div>#}
-{#                                                            <div class="col-md-7 text">#}
-{#                                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing#}
-{#                                                                    elit. Odio dolorem reiciendis doloremque veniam#}
-{#                                                                    perspiciatis quam velit pariatur eius, repellendus#}
-{#                                                                    dolores eveniet maiores sed. Quod quam minus dolore#}
-{#                                                                    sed cumque aliquid.</p>#}
-{#                                                            </div>#}
-{#                                                        </div>#}
-{#                                                    </div>#}
-{#                                                </div>#}
-{#                                            </div>#}
-{#                                        </div>#}
-{#                                    </div>#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                </div>#}
-{#            </div>#}
-{#            <div data-anchor="page8" class="pp-scrollable section section-8">#}
-{#                <div class="scroll-wrap">#}
-{#                    <div class="section-bg" style="background-image:url({% static 'images/bg/contact.jpg' %});"></div>#}
-{#                    <div class="scrollable-content">#}
-{#                        <div class="vertical-title text-white d-none d-lg-block"><span>contact</span></div>#}
-{#                        <div class="vertical-centred">#}
-{#                            <div class="boxed boxed-inner">#}
-{#                                <div class="boxed">#}
-{#                                    <div class="container">#}
-{#                                        <div class="intro overflow-hidden">#}
-{#                                            <div class="row">#}
-{#                                                <div class="col-md-6">#}
-{#                                                    <h2 class="title"><span class="text-primary">New York</span>, USA#}
-{#                                                    </h2>#}
-{#                                                    <h5 class="text-muted">166 Main Street, Beverly Hills, CA 90210</h5>#}
-{#                                                    <section class="contact-address">#}
-{#                                                        <h3><a class="mail" href="mailto:contact@ramsay.com">#}
-{#                                                            contact@ramsay.com</a></h3>#}
-{#                                                        <h3><span class="phone">+96 56-85-1379</span></h3>#}
-{#                                                    </section>#}
-{#                                                </div>#}
-{#                                                <div class="col-md-6">#}
-{#                                                    <div class="contact-info">#}
-{#                                                        <form class="js-form" novalidate="novalidate">#}
-{#                                                            <div class="row">#}
-{#                                                                <div class="form-group col-sm-6">#}
-{#                                                                    <input type="text" name="name" required=""#}
-{#                                                                           placeholder="Name*" aria-required="true">#}
-{#                                                                </div>#}
-{#                                                                <div class="form-group col-sm-6">#}
-{#                                                                    <input type="email" required="" name="email"#}
-{#                                                                           placeholder="Email*">#}
-{#                                                                </div>#}
-{#                                                                <div class="form-group col-sm-12">#}
-{#                                                                    <input type="text" name="subject"#}
-{#                                                                           placeholder="Subject (Optinal)">#}
-{#                                                                </div>#}
-{#                                                                <div class="form-group col-sm-12">#}
-{#                                                                    <textarea name="message" required=""#}
-{#                                                                              placeholder="Message*"></textarea>#}
-{#                                                                </div>#}
-{#                                                                <div class="form-group form-group-message col-sm-12">#}
-{#                                                                    <span id="success" class="text-primary">Thank You, your message is successfully sent!</span>#}
-{#                                                                    <span id="error" class="text-primary">Sorry, something went wrong </span>#}
-{#                                                                </div>#}
-{#                                                                <div class="col-sm-12">#}
-{#                                                                    <button type="submit" class="btn">Contact me#}
-{#                                                                    </button>#}
-{#                                                                </div>#}
-{#                                                            </div>#}
-{#                                                        </form>#}
-{#                                                    </div>#}
-{#                                                </div>#}
-{#                                            </div>#}
-{#                                        </div>#}
-{#                                    </div>#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                </div>#}
-{#            </div>#}
+            <div data-anchor="page4" class="pp-scrollable section section-4">
+                <div class="scroll-wrap">
+                    <div class="section-bg bg-about"
+                         style="background-image:url({% static 'images/bg/about.jpg' %});"></div>
+                    <div class="scrollable-content">
+                        <div class="vertical-title text-white  d-none d-lg-block"><span>about us</span></div>
+                        <div class="vertical-centred">
+                            <div class="boxed boxed-inner">
+                                <div class="boxed">
+                                    <div class="container">
+                                        <div class="intro">
+                                            <div class="row align-items-center">
+                                                <div class="col-lg-6 offset-xl-1">
+                                                    <div class="experience-box">
+                                                        <div class="experience-content">
+                                                            <div class="experience-number">4</div>
+                                                            <div class="experience-info">
+                                                                <div>Years<br>Experience<br>Working</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-5 mt-5 mt-xl-0">
+                                                    <h2 class="title"><span class="text-primary">The best</span>
+                                                        websites</h2>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                    Accusantium dicta sit pariatur odio unde deleniti eveniet.
+                                                    <div class="progress-bars">
+                                                        <div class="clearfix">
+                                                            <div class="number float-left">Mobile Design</div>
+                                                            <div class="number float-right">80%</div>
+                                                        </div>
+                                                        <div class="progress">
+                                                            <div class="progress-bar-wrp">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                     style="width: 80%" aria-valuenow="0"
+                                                                     aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="clearfix">
+                                                            <div class="number float-left">Coding</div>
+                                                            <div class="number float-right">70%</div>
+                                                        </div>
+                                                        <div class="progress">
+                                                            <div class="progress-bar-wrp">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                     style="width: 70%" aria-valuenow="25"
+                                                                     aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="clearfix">
+                                                            <div class="number float-left">Illustration</div>
+                                                            <div class="number float-right">70%</div>
+                                                        </div>
+                                                        <div class="progress">
+                                                            <div class="progress-bar-wrp">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                     style="width: 70%" aria-valuenow="25"
+                                                                     aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-anchor="page7" class="pp-scrollable text-white section section-7">
+                <div class="scroll-wrap">
+                    <div class="section-bg" style="background-image:url({% static 'images/bg/reviews.jpg' %});"></div>
+                    <div class="bg-quote"></div>
+                    <div class="scrollable-content">
+                        <div class="vertical-title  d-none d-lg-block"><span>testimonials</span></div>
+                        <div class="vertical-centred">
+                            <div class="boxed boxed-inner">
+                                <div class="boxed">
+                                    <div class="container">
+                                        <div class="intro">
+                                            <div class="review-carousel owl-carousel">
+                                                <div class="review-carousel-item">
+                                                    <div class="review-row">
+                                                        <div class="row">
+                                                            <div class="col-md-5">
+                                                                <div class="review-author">
+                                                                    <div class="author-name">David & Elisa</div>
+                                                                    <i>Apartment view lake at Brooklyn</i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-7 text">
+                                                                <p>If you are seeking an Interior designer that will
+                                                                    understand exactly your needs, and someone who will
+                                                                    utilise their creative and technical skills in
+                                                                    parity with your taste, then Suzanne at The Ramsay
+                                                                    Studio is perfect.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="review-row">
+                                                        <div class="row">
+                                                            <div class="col-md-5">
+                                                                <div class="review-author">
+                                                                    <div class="author-name">Amanda</div>
+                                                                    <i>Apartment view lake at Brooklyn</i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-7 text">
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                                                                    elit. Odio dolorem reiciendis doloremque veniam
+                                                                    perspiciatis quam velit pariatur eius, repellendus
+                                                                    dolores eveniet maiores sed. Quod quam minus dolore
+                                                                    sed cumque aliquid.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="review-carousel-item">
+                                                    <div class="review-row">
+                                                        <div class="row">
+                                                            <div class="col-md-5">
+                                                                <div class="review-author">
+                                                                    <div class="author-name">David & Elisa</div>
+                                                                    <i>Apartment view lake at Brooklyn</i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-7 text">
+                                                                <p>If you are seeking an Interior designer that will
+                                                                    understand exactly your needs, and someone who will
+                                                                    utilise their creative and technical skills in
+                                                                    parity with your taste, then Suzanne at The Ramsay
+                                                                    Studio is perfect.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="review-row">
+                                                        <div class="row">
+                                                            <div class="col-md-5">
+                                                                <div class="review-author">
+                                                                    <div class="author-name">Amanda</div>
+                                                                    <i>Apartment view lake at Brooklyn</i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-7 text">
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                                                                    elit. Odio dolorem reiciendis doloremque veniam
+                                                                    perspiciatis quam velit pariatur eius, repellendus
+                                                                    dolores eveniet maiores sed. Quod quam minus dolore
+                                                                    sed cumque aliquid.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="review-carousel-item">
+                                                    <div class="review-row">
+                                                        <div class="row">
+                                                            <div class="col-md-5">
+                                                                <div class="review-author">
+                                                                    <div class="author-name">David & Elisa</div>
+                                                                    <i>Apartment view lake at Brooklyn</i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-7 text">
+                                                                <p>If you are seeking an Interior designer that will
+                                                                    understand exactly your needs, and someone who will
+                                                                    utilise their creative and technical skills in
+                                                                    parity with your taste, then Suzanne at The Ramsay
+                                                                    Studio is perfect.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="review-row">
+                                                        <div class="row">
+                                                            <div class="col-md-5">
+                                                                <div class="review-author">
+                                                                    <div class="author-name">Amanda</div>
+                                                                    <i>Apartment view lake at Brooklyn</i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-7 text">
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                                                                    elit. Odio dolorem reiciendis doloremque veniam
+                                                                    perspiciatis quam velit pariatur eius, repellendus
+                                                                    dolores eveniet maiores sed. Quod quam minus dolore
+                                                                    sed cumque aliquid.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-anchor="page8" class="pp-scrollable section section-8">
+                <div class="scroll-wrap">
+                    <div class="section-bg" style="background-image:url({% static 'images/bg/contact.jpg' %});"></div>
+                    <div class="scrollable-content">
+                        <div class="vertical-title text-white d-none d-lg-block"><span>contact</span></div>
+                        <div class="vertical-centred">
+                            <div class="boxed boxed-inner">
+                                <div class="boxed">
+                                    <div class="container">
+                                        <div class="intro overflow-hidden">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <h2 class="title"><span class="text-primary">New York</span>, USA
+                                                    </h2>
+                                                    <h5 class="text-muted">166 Main Street, Beverly Hills, CA 90210</h5>
+                                                    <section class="contact-address">
+                                                        <h3><a class="mail" href="mailto:contact@ramsay.com">
+                                                            contact@ramsay.com</a></h3>
+                                                        <h3><span class="phone">+96 56-85-1379</span></h3>
+                                                    </section>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="contact-info">
+                                                        <form class="js-form" novalidate="novalidate">
+                                                            <div class="row">
+                                                                <div class="form-group col-sm-6">
+                                                                    <input type="text" name="name" required=""
+                                                                           placeholder="Name*" aria-required="true">
+                                                                </div>
+                                                                <div class="form-group col-sm-6">
+                                                                    <input type="email" required="" name="email"
+                                                                           placeholder="Email*">
+                                                                </div>
+                                                                <div class="form-group col-sm-12">
+                                                                    <input type="text" name="subject"
+                                                                           placeholder="Subject (Optinal)">
+                                                                </div>
+                                                                <div class="form-group col-sm-12">
+                                                                    <textarea name="message" required=""
+                                                                              placeholder="Message*"></textarea>
+                                                                </div>
+                                                                <div class="form-group form-group-message col-sm-12">
+                                                                    <span id="success" class="text-primary">Thank You, your message is successfully sent!</span>
+                                                                    <span id="error" class="text-primary">Sorry, something went wrong </span>
+                                                                </div>
+                                                                <div class="col-sm-12">
+                                                                    <button type="submit" class="btn">Contact me
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 {% endblock %}
 <!-- jQuery -->
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/wow.min.js' %}"></script>
+<script src="{% static 'js/smoothscroll.js' %}"></script>
+<script src="{% static 'js/animsition.js' %}"></script>
+<script src="{% static 'js/jquery.validate.min.js' %}"></script>
+<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/jquery.pagepiling.min.js' %}"></script>
 
+<!-- Scripts -->
+<script src="{% static 'js/scripts.js' %}"></script>
+<script src="{% static 'js/lightbox.js' %}"></script>
 {% block script %}
-    <script src="{% static 'js/jquery.min.js' %}"></script>
-    <script src="{% static 'js/wow.min.js' %}"></script>
-    <script src="{% static 'js/smoothscroll.js' %}"></script>
-    <script src="{% static 'js/animsition.js' %}"></script>
-    <script src="{% static 'js/jquery.validate.min.js' %}"></script>
-    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
-    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
-    <script src="{% static 'js/jquery.pagepiling.min.js' %}"></script>
 
-    <!-- Scripts -->
-    <script src="{% static 'js/scripts.js' %}"></script>
 {% endblock %}
 
 </body>

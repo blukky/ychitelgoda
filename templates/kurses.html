@@ -1,16 +1,139 @@
 {% extends 'main.html' %}
-
+{% load static %}
 {% block title %}Курсы повышения квалификации{% endblock %}
 
 
 {% block content %}
+
+    <style type="text/css">
+        .kurses-list {
+            width: 90%;
+            margin-top: 2%;
+        }
+
+        .kurs {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .kurses-name {
+            font-size: 2rem;
+        }
+
+        .kurs-photo {
+            width: 40%;
+            min-width: 40%;
+            margin-right: 3%;
+        }
+
+        .photo {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+
     <div class="animsition">
-    <div class="loader"><div class="spinner"><div class="double-bounce1"></div><div class="double-bounce2"></div></div></div>
+        <div class="loader">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
 
-    <!-- Content CLick Capture-->
+        <!-- Content CLick Capture-->
 
-    <div class="click-capture"></div>
-    {% include 'menu.html' %}
+        <div class="click-capture"></div>
+        {% include 'menu.html' %}
+        <div class="pagepiling">
+            <div class="pp-scrollable section section-6" style="background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 36%, rgba(0,212,255,1) 100%); color: #f7f7f7">
+                <div class="scroll-wrap">
+                    <div class="scrollable-content">
+                        <div class="vertical-title text-white d-none d-lg-block"><span>Курсы</span></div>
+                        <div class="vertical-centred">
+                            <div class="boxed boxed-inner">
+                                <div class="boxed">
+                                    <div class="container"
+                                         style="width: 100%; max-width: 1920px; margin-left: 7%; padding-right: 5%">
+                                        <div class="intro">
+                                            <h2 class="title text-white"><span class="text-primary">Курсы</span>
+                                                повышения квалификации</h2>
+                                            <div class="kurses-list">
+                                                <div class="kurs">
+                                                    <a class="kurs-photo" href="{% static 'images/kurses/bezop.jpg' %}"
+                                                       data-lightbox="bezop"><img class="photo"
+                                                                                  src="{% static 'images/kurses/bezop.jpg' %}"
+                                                                                  alt=""></a>
+                                                    <div class="kurses-name">Планирование и реализация дополнительных
+                                                        мероприятий по усилению мер безопасности в образовательных
+                                                        организациях
+                                                    </div>
+                                                </div>
+                                                <hr color="#717171"/>
+                                                <div class="kurs">
+                                                    <a class="kurs-photo" href="{% static 'images/kurses/dip1.png' %}"
+                                                       data-lightbox="dip1"><img class="photo"
+                                                                                 src="{% static 'images/kurses/dip1.png' %}"
+                                                                                 alt=""></a>
+                                                    <div class="kurses-name">Организация деятельности педагогических
+                                                        работников по классному руководству
+                                                    </div>
+                                                </div>
+                                                <hr color="#717171"/>
+                                                <div class="kurs">
+                                                    <a class="kurs-photo" href="{% static 'images/kurses/dip3.jpg' %}"
+                                                       data-lightbox="dip3"><img class="photo"
+                                                                                 src="{% static 'images/kurses/dip3.jpg' %}"
+                                                                                 alt=""></a>
+                                                    <div class="kurses-name">Методика преподавания учебных дисциплин.
+                                                        Обновление содержания и методики обучения истории и
+                                                        обществознанию в условиях реализации ФГОС
+                                                    </div>
+                                                </div>
+                                                <hr color="#717171"/>
+                                                <div class="kurs">
+                                                    <a class="kurs-photo" href="{% static 'images/kurses/dip2.jpg' %}"
+                                                       data-lightbox="dip2"><img class="photo"
+                                                                                 src="{% static 'images/kurses/dip2.jpg' %}"
+                                                                                 alt=""></a>
+                                                    <div class="kurses-name">Основы обучения молодых граждан участию в
+                                                        местном самоуправлении
+                                                    </div>
+                                                </div>
+                                                <hr color="#717171"/>
+                                                <div class="kurs">
+                                                    <a class="kurs-photo" href="{% static 'images/kurses/dip5.jpg' %}"
+                                                       data-lightbox="dip5"><img class="photo"
+                                                                                 src="{% static 'images/kurses/dip5.jpg' %}"
+                                                                                 alt=""></a>
+                                                    <div class="kurses-name">Методика преподавания учебных дисциплин.
+                                                        Обновление содержания и методики обучения истории и
+                                                        обществознанию в условиях перехода на ФГОС
+                                                    </div>
+                                                </div>
+                                                <hr color="#717171"/>
+                                                <div class="kurs">
+                                                    <a class="kurs-photo" href="{% static 'images/kurses/dip4.jpg' %}"
+                                                       data-lightbox="dip4"><img class="photo"
+                                                                                 src="{% static 'images/kurses/dip4.jpg' %}"
+                                                                                 alt=""></a>
+                                                    <div class="kurses-name">Современные технологии в профессиональном и
+                                                        технологическом образовании
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 {% endblock %}
